@@ -1,0 +1,107 @@
+@keyframes backgroundSlide {
+    0% {
+        background:white;
+    }
+    100% {
+        background:#181818;
+    }
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+p {
+    text-align: justify;
+}
+.hideOnMobile {
+    display:none;
+}
+.centerOnMobile {
+    text-align:center
+}
+.titulo, .titulo h2{
+    animation:4s ease-out 0s 1 backgroundSlide;
+    background:#181818;
+    color:white !important;
+}
+@media only screen and (min-width: 768px){
+    body{
+        overflow: hidden;
+    }
+    .hideOnMobile {
+        display:inline;
+    }
+    .showOnMobile {
+        display:none;
+    }
+    .centerOnMobile {
+        text-align:left
+    }
+}
+#xp, #academico, #conhecimento {
+    overflow: scroll;
+}
+::-webkit-scrollbar,
+::-webkit-scrollbar-button,
+::-webkit-scrollbar-track,
+::-webkit-scrollbar-track-piece,
+::-webkit-scrollbar-thumb,
+::-webkit-scrollbar-corner,
+::-webkit-resizer {
+    width:0;
+} 
+h2{
+    color:#181818;
+}
+span{
+    font-weight: bolder;
+    color:#fff;
+}
+.tabs li a{
+    color:black !important;
+}
+/*Personalização cor de tabs do materialize*/
+.tabs .tab a {
+      color: #181818;
+}
+.tabs .tab a .active {
+    color: #181818 !important;
+}
+.tabs .tab a:hover {
+    color: #181818 !important;
+}
+.tabs .tab a:focus {
+    background-color: rgba(#181818, 0.1) !important;
+}
+.tabs .tab a .active{
+    background-color: rgba(#181818, 0.1) !important;
+}
+.indicator {
+    background-color: #181818 !important;
+}
+.card-title {
+    color:#181818;
+}
+.card-content p {
+    text-align:justify
+}
+.oldJobs span,
+.oldJobs p {
+    color:rgb(134, 134, 134);
+}
+.dados {
+    margin-top:10%;
+    color:rgb(172, 172, 172);
+}
+.dados p {
+    text-align:center;
+}
+.dados div p a {
+    margin:0 2%;
+    color:#000000;
+}
+#rodape {
+    position:fixed;
+    bottom:0;    
+    background-color:#181818;
+    color:white;
+}
