@@ -23,6 +23,11 @@ p {
     background:#181818;
     color:white !important;
 }
+.titulo img{
+    height:100px;
+    margin:5px 40px 0px 40px;
+    border-radius: 50%;
+}
 @media only screen and (min-width: 768px){
     body{
         overflow: hidden;
@@ -80,9 +85,11 @@ span{
 }
 .card-title {
     color:#181818;
+    font-size: 16px;
 }
 .card-content p {
-    text-align:justify
+    text-align:justify;
+    font-size: 16px;
 }
 .oldJobs span,
 .oldJobs p {
@@ -104,4 +111,7 @@ span{
     bottom:0;    
     background-color:#181818;
     color:white;
+}
+#xp p{
+    font-size: 12px;
 }
