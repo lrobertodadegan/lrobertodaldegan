@@ -7,7 +7,8 @@
     }
 }
 body{
-    font-family: 'Open Sans', sans-serif;
+    overflow-x: hidden;
+    font-family: 'Encode Sans', sans-serif;
 }
 p {
     text-align: justify;
@@ -27,7 +28,30 @@ p {
     margin:5px 40px 0px 40px;
     border-radius: 50%;
 }
+.apresentacao{
+    background-image: url('../img/rectangle.png');
+    background-repeat: no-repeat;
+    min-height: 800px;
+}
+.h-img-col{
+    text-align: center;
+}
+.h-img-col img{
+    margin-top:15%;
+    transition: all 2s;
+}
+#title-box{
+    margin-top:15%;
+    max-width: 100%;
+}
+
 @media only screen and (min-width: 768px){
+    .apresentacao{
+        min-height: 540px;
+    }
+    .h-img-col img{
+        margin-top:25%;
+    }
     .hideOnMobile {
         display:inline;
     }
@@ -61,11 +85,11 @@ span{
     color:black !important;
 }
 /*Personalização cor de tabs do materialize*/
-.apresentacao{
+/* .apresentacao{
     background:#181818;
     padding-bottom: 10px;
     animation:4s ease-out 0s 1 backgroundSlide;
-}
+} */
 .tabs .tab a {
       color: #181818;
 }
@@ -122,6 +146,7 @@ span{
 .projeto{
     text-align: center;
     margin-bottom: 40px;
+    height: 540px;
 }
 .projeto a{
     font-weight: bolder;

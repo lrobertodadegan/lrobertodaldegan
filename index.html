@@ -3,7 +3,9 @@
         <title>Lucas Roberto - Consultoria técnica e desenvolvimento</title>
         <link rel="stylesheet" href="css/materialize.css">
         <link rel="stylesheet" href="css/custom.css">
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Encode+Sans:wght@100..900&display=swap" rel="stylesheet">
         <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
         <meta charset="utf-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -13,7 +15,7 @@
     </head>
     <body>
         <div class="apresentacao">
-            <div class="row titulo">
+            <!-- <div class="row titulo">
                 <div class="col m2 s12">
                     <img src="./img/logo.jpg" title="logo" alt="logo"/>
                 </div>
@@ -36,6 +38,15 @@
                         <span>React JS & React Native</span>
                     </div>
                 </div>
+            </div> -->
+            
+            <div class="row">
+                <div class="h-img-col col m5 s12 align-middle">
+                    <img id='new-logo' src="./img/logo.png"/>
+                </div>
+                <div class="h-img-col col m5 s12 align-middle">
+                    <img id='title-box' src="./img/titlebox.png"/>
+                </div>
             </div>
         </div>
         <div class="row">
@@ -52,16 +63,35 @@
                     </li>
                 </ul> -->
                 <div id="conhecimento" class="info col s10 offset-s1">
-                    <h4>Portfólio (projetos pessoais)</h4>
+                    <h4>Portfólio</h4>
                     <div class="row">
+                        <div class="projeto col m6 s12">
+                            <a href="https://acaodoespirito.com.br/casa-acao">Projeto Casa Ação</a>
+                            <br/>
+                            <img class='projetoimg' src="./img/projetos/casaacao.png" title="site-casaacao" alt="site-casaacao"/>
+                            <p><b>Projeto: </b><br/>Site/Landing Page institucional</p>
+                            <p><b>Tecnologias: </b><br/>React JS.</p>
+                            <p><b>Atuação: </b><br/>Design e desenvolvimento.</p>
+                        </div>
+
+                        <div class="projeto col m6 s12">
+                            <a href="https://acaodoespirito.com.br/">Igreja Ação do Espírito</a>
+                            <br/>
+                            <img class='projetoimg' src="./img/projetos/acao.png" title="site-acao" alt="site-acao"/>
+                            <p><b>Projeto: </b><br/>Site institucional integrado com Google Calendar + plataforma de cursos (video-aula) personalizada integrada</p>
+                            <p><b>Tecnologias: </b><br/>React JS, Node.js;</p>
+                            <p><b>Atuação: </b><br/>Design, desenvolvimento e gestão de hospedagem e banco de dados.</p>
+                        </div>
+
                         <div class="projeto col m6 s12">
                             <a href="https://play.google.com/store/apps/details?id=com.dominicall">
                                 Dominicall EBD: Gestão da Escola Bíblica Dominical
                             </a>
                             <br/>
                             <img class='projetoimg' src="./img/projetos/dominicall.png" title="app-devocione" alt="app-devocione"/>
-                            <p>Mobile APP (Android) desenvolvido em React Native e Node.js.</p>
-                            <p>Atuação: concepção, design, desenvolvimento e publicação.</p>
+                            <p><b>Projeto: </b><br/>Aplicativo mobile (Android) de gestão da Escola Bíblica Dominical (versões com e sem anúncios - Google Ads). Funcionalidades: gestão de grupos de estudo, presença, gestão financeira simplificada, gestão de equipe, escalas e relatórios.</p>
+                            <p><b>Tecnologias: </b><br/>React Native, Node.js;</p>
+                            <p><b>Atuação: </b><br/>Concepção, design, desenvolvimento, gestão de publicação e gestão de hospedagem e banco de dados.</p>
                         </div>
 
                         <div class="projeto col m6 s12">
@@ -70,8 +100,9 @@
                             </a>
                             <br/>
                             <img class='projetoimg' src="./img/projetos/devocione.png" title="app-devocione" alt="app-devocione"/>
-                            <p>Mobile APP (Android) desenvolvido em React Native.</p>
-                            <p>Atuação: concepção, design, desenvolvimento e publicação.</p>
+                            <p><b>Projeto: </b><br/>Aplicativo mobile (Android) de estudos e anotações de devocionais (com anúncios - Google Ads). Funcionalidades: Bíblia integrada, sorteio de versículo diário, gestão de devocionais off-line, compartilhamento de versículos e devocionais.</p>
+                            <p><b>Tecnologias: </b><br/>React Native;</p>
+                            <p><b>Atuação: </b><br/>Concepção, design, desenvolvimento, gestão de publicação.</p>
                         </div>
 
                         <div class="projeto col m6 s12">
@@ -80,8 +111,9 @@
                             </a>
                             <br/>
                             <img class='projetoimg' src="./img/projetos/rotina.png" title="app-rotina" alt="app-rotina"/>
-                            <p>Mobile APP (Android) desenvolvido em React Native.</p>
-                            <p>Atuação: concepção, design, desenvolvimento e publicação.</p>
+                            <p><b>Projeto: </b><br/>Aplicativo mobile (Android) de rotina familiar (com anúncios - Google Ads). Funcionalidades: gestão de tarefas, pontos e premiação automática (sistema de recompensas), acompanhamento de histórico em calendário.</p>
+                            <p><b>Tecnologias: </b><br/>React Native;</p>
+                            <p><b>Atuação: </b><br/>Concepção, design, desenvolvimento, gestão de publicação.</p>
                         </div>
 
                         <div class="projeto col m6 s12">
@@ -90,8 +122,9 @@
                             </a>
                             <br/>
                             <img class='projetoimg' src="./img/projetos/prixinhos.png" title="app-peixinhos" alt="app-peixinhos"/>
-                            <p>Mobile APP (Android) desenvolvido em React Native.</p>
-                            <p>Atuação: concepção, design, desenvolvimento e publicação.</p>
+                            <p><b>Projeto: </b><br/>Jogo mobile (Android) no estilo casual/educacional com a temática Bíblica (com anúncios - Google Ads).</p>
+                            <p><b>Tecnologias: </b><br/>React Native;</p>
+                            <p><b>Atuação: </b><br/>Concepção, design, desenvolvimento, gestão de publicação.</p>
                         </div>
 
                         <div class="projeto col m6 s12">
@@ -100,24 +133,9 @@
                             </a>
                             <br/>
                             <img class='projetoimg' src="./img/projetos/rc.png" title="app-rc" alt="app-rc"/>
-                            <p>Mobile APP (Android) desenvolvido em React Native e Node.js.</p>
-                            <p>Atuação: design, desenvolvimento e publicação.</p>
-                        </div>
-
-                        <div class="projeto col m6 s12">
-                            <a href="https://acaodoespirito.com.br/casa-acao">Projeto Casa Ação</a>
-                            <br/>
-                            <img class='projetoimg' src="./img/projetos/casaacao.png" title="site-casaacao" alt="site-casaacao"/>
-                            <p>Sub site (Landing Page) desenvolvido em React JS.</p>
-                            <p>Atuação: design e desenvolvimento.</p>
-                        </div>
-
-                        <div class="projeto col m6 s12">
-                            <a href="https://acaodoespirito.com.br/">Igreja Ação do Espírito</a>
-                            <br/>
-                            <img class='projetoimg' src="./img/projetos/acao.png" title="site-acao" alt="site-acao"/>
-                            <p>Site + WebApp desenvolvidos em React JS e Node.js.</p>
-                            <p>Atuação: design, desenvolvimento e na gestão de hospedagem e domínio.</p>
+                            <p><b>Projeto: </b><br/>Aplicativos mobile (Android) para gestão no estilo demanda/oferta de mão de obra voluntária (com anúncios - Google Ads). Em um app a intituição cadastra demandas, enquanto, em outro app, voluntários se voluntariam.</p>
+                            <p><b>Tecnologias: </b><br/>React Native, Node.js;</p>
+                            <p><b>Atuação: </b><br/>Design, desenvolvimento, gestão de publicação e gestão de hospedagem e banco de dados.</p>
                         </div>
                     </div>
                 </div>
@@ -281,6 +299,28 @@
         <script src="js/jquery.js"></script>
         <script src="js/materialize.js"></script>
         <script>
+            const animate = (id, baseMargin) => {
+                let item = document.getElementById(id);
+
+                let oldMarg = new Number(item.style.marginTop.split('%')[0]);
+
+                let marg = oldMarg && oldMarg > 15 ? `${baseMargin - Math.random()}%` : `${baseMargin + Math.random()}%`;
+
+                if(item.style.marginLeft === '10%'){
+                    item.style.marginLeft = '5%';//left-zero
+                    item.style.marginTop = '20%';
+                } else if(item.style.marginTop === '20%'){
+                    item.style.marginLeft = '0%';
+                    item.style.marginTop = '15%';//top-zero           
+                } else if(item.style.marginLeft === '0%'){
+                    item.style.marginLeft = '5%';//left-zero
+                    item.style.marginTop = '10%';        
+                } else if(!item.style.marginTop || item.style.marginTop === '10%'){
+                    item.style.marginLeft = '10%';
+                    item.style.marginTop = '15%';//top-zero
+                }
+            }
+
             document.addEventListener('DOMContentLoaded', function() {
                 var elems = document.querySelectorAll('.chips');
                 var instances = M.Chips.init(elems, null);
@@ -293,8 +333,10 @@
                 age = Math.abs(Math.round((age / (60*60*24)) / 365.25));
                 
                 document.getElementById('age').innerHTML = `Tenho ${age} anos e atuo com tecnologia desde 2016.`;
-            });
 
+            });
+            
+            setInterval(() => animate('title-box', 15), 2000);
             //var instance = M.Tabs.init(document.getElementById("tabs"), {swipeable: true});
         </script>
     </body>
