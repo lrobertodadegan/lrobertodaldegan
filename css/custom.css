@@ -167,3 +167,12 @@ span{
 .info h4 {
     margin-bottom: 50px;
 }
+.empimg{
+    width: 60%;
+    filter: grayscale();
+    transition: all .5s;
+}
+.empimg:hover{
+    width: 65%;
+    filter: none;
+}
