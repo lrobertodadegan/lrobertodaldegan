@@ -12,15 +12,18 @@
         <meta http-equiv='cache-control' content='no-cache'> 
         <meta http-equiv='expires' content='0'> 
         <meta http-equiv='pragma' content='no-cache'>
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2420598559068720"
+     crossorigin="anonymous"></script>
     </head>
     <body>
         <div class="apresentacao">
             <div class="row">
-                <div class="h-img-col col m5 s12 align-middle">
-                    <img id='new-logo' src="./img/logo.png"/>
+                <div class="h-img-col col m1 s2 align-middle">
+                    <img id='new-logo' src="./img/logo-orange.png"/>
                 </div>
-                <div class="h-img-col col m5 s12 align-middle">
-                    <img id='title-box' src="./img/titlebox.png"/>
+                <div class="col m11 s10 align-middle">
+                    <h4 class="hideOnMobile">Lucas Roberto Daldegan</h4>
+                    <h5 class="showOnMobile">Lucas Roberto Daldegan</h5>
                 </div>
             </div>
         </div>
@@ -261,28 +264,6 @@
         <script src="js/jquery.js"></script>
         <script src="js/materialize.js"></script>
         <script>
-            const animate = (id, baseMargin) => {
-                let item = document.getElementById(id);
-
-                let oldMarg = new Number(item.style.marginTop.split('%')[0]);
-
-                let marg = oldMarg && oldMarg > 15 ? `${baseMargin - Math.random()}%` : `${baseMargin + Math.random()}%`;
-
-                if(item.style.marginLeft === '10%'){
-                    item.style.marginLeft = '5%';//left-zero
-                    item.style.marginTop = '20%';
-                } else if(item.style.marginTop === '20%'){
-                    item.style.marginLeft = '0%';
-                    item.style.marginTop = '15%';//top-zero           
-                } else if(item.style.marginLeft === '0%'){
-                    item.style.marginLeft = '5%';//left-zero
-                    item.style.marginTop = '10%';        
-                } else if(!item.style.marginTop || item.style.marginTop === '10%'){
-                    item.style.marginLeft = '10%';
-                    item.style.marginTop = '15%';//top-zero
-                }
-            }
-
             document.addEventListener('DOMContentLoaded', function() {
                 var elems = document.querySelectorAll('.chips');
                 var instances = M.Chips.init(elems, null);
@@ -297,8 +278,6 @@
                 document.getElementById('age').innerHTML = `Tenho ${age} anos e atuo com tecnologia desde 2016.`;
 
             });
-            
-            setInterval(() => animate('title-box', 15), 2000);
         </script>
     </body>
 </html>
