@@ -9,7 +9,8 @@
 body{
     overflow-x: hidden;
     font-family: 'Encode Sans', sans-serif;
-    color:#252021
+    color:#fff;
+    background-color: #252021;
 }
 h1, h2, h3, h4, h5{
     font-weight: bold;
@@ -19,6 +20,10 @@ p {
 }
 a{
     color:#4cb7ef
+}
+img{
+    border-radius: 10px;
+    border-collapse: separate; 
 }
 .hideOnMobile {
     display:none;
@@ -38,7 +43,6 @@ a{
 .apresentacao{
     background-image: url('../img/rectangle.png');
     background-repeat: no-repeat;
-    color:#4cb7ef;
 }
 .h-img-col{
     text-align: center;
@@ -122,9 +126,9 @@ span{
     font-size: 20px;
 }
 .projetoimg{
-    width: 100%;
+    width: 60%;
     height: 200px;
-    object-fit:contain;
+    object-fit:cover;
     margin:10px 0;
 }
 .chipwrap{
